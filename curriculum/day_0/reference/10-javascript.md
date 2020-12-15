@@ -48,6 +48,8 @@ let myNullVariable = null;
 
 A template literal is just another way to write a multiline string.
 
+Null and undefined are very similar. On one hand, undefined is a variable that has been not yet been defined. On the other hand, null is a variable that is explicitly nothing (no value).
+
 ### Reference types
 
 JavaScript has many reference types: objects, arrays, maps, sets, weakmaps, weaksets, dates, and more. The most common are objects and arrays. Objects hold key and value pairs, while arrays are lists of values.
@@ -233,7 +235,7 @@ Be aware that truthy and falsy values are not always what you think they are.
 let debt = 0;
 if (debt) {
   console.log("Try to save more money this month");
-  // 0, false, empty strings, null, undefined, and NaN all falsey
+  // 0, false, empty strings, null, undefined, and NaN are all falsey
   // this code will run even if your debt is 0
 }
 ```
@@ -271,7 +273,36 @@ const isLuckyDay = myLuckyNumber === 7 ? true : false;
 
 ### Immutability
 
-TODO: with reference types
+JavaScript objects and arrays are reference types. When you set a variable equal to a reference type, it does not copy it. Rather, both variables now point to the exact same reference in memory.
+
+```js
+const myClassSchedule = ["literature", "math", "philosophy"];
+const friendClassSchedule = myClassSchedule;
+
+const myGrades = { literature: "B" };
+const friendGrades = myGrades;
+
+console.log(myClassSchedule === friendClassSchedule); // true
+console.log(myGrades === friendGrades); // true
+
+// Because arrays and objects are reference types,
+// Changing one changes both
+
+myClassSchedule[1] = "government";
+console.log(myClassSchedule); // ["English", "AP Government", "Philosophy"]
+console.log(friendClassSchedule); // ["English", "AP Government", "Philosophy"]
+
+myGrades.literature = "A";
+console.log(myGrades); // { literature: "A" }
+console.log(friendGrades); // { literature: "A" }
+
+// Make a copy immutably (without a reference)
+const tuesdayClassSchedule = [...myClassSchedule];
+const fallGrades = { ...friendGrades };
+
+console.log(myClassSchedule === tuesdayClassSchedule); // false
+console.log(myGrades === fallGrades); // false
+```
 
 ## Functions
 
@@ -434,19 +465,19 @@ console.log(Object.entries(person));
 const takesTimeCallback = setTimeout(() => console.log("callback done"), 500);
 
 const takesTimePromise = new Promise((resolve, reject) =>
-  setTimeout(() => resolve("done"), 500)
+  setTimeout(() => resolve("promise done"), 500)
 );
 takesTimePromise
-  .then((data) => console.log("promise", data))
+  .then((data) => console.log("then", data))
   .catch((error) => console.log(error));
 
-const outerAsyncFunction = async () => {
+const start = async () => {
   const takesTimeAsync = await new Promise((resolve, reject) =>
     setTimeout(() => resolve("done"), 500)
   );
   console.log("await", takesTimeAsync);
 };
-outerAsyncFunction();
+start();
 ```
 
 ## Asynchronous loops
