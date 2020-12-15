@@ -1,6 +1,6 @@
 # surge.sh
 
-To publish your intro to web development websites so that others you share the url with can see it, we will use surge.sh. Watch the video or follow the commands below:
+Once you’ve built your website on your local machine, you will need to host it online for others to view it on the internet. To deploy your intro to web development websites online, we will use surge.sh as our website hosting provider. Watch the video or follow the commands below:
 
 [![maxresdefault-surge.jpg](../images/maxresdefault-surge.jpg)](https://www.youtube.com/watch?v=-EjdMvYPSVU)
 _Surge on [YouTube](https://www.youtube.com/watch?v=-EjdMvYPSVU)_

@@ -4,7 +4,7 @@ When writing papers or making projects, you may end up with a folder like this:
 
 ![img](../images/VbWttOp.jpeg)
 
-Git is version control. GitHub is where your project lives online. There are many benefits to Git and GitHub, such as collaboration, nonlinear editing, advanced workflows, and more, which are outside the scope of this course. Our minimum requirement is for you to be able to save all your project code online. We strongly recommend watching additional [tutorials](https://www.youtube.com/watch?v=9GKpbI1siow&list=PLpcSpRrAaOarEpNz71TSfNVd0eQmsZSgN) to learn more about Git and GitHub.
+Git is version control. Version control helps you collaborate with others, keep track of changes, and backup your work (so you can always go back to a previous version when something breaks). GitHub is where your git repository (project) lives online. There are many benefits to Git and GitHub, such as online collaboration, nonlinear editing, advanced workflows, and more, which are outside the scope of this course. Our minimum requirement is for you to be able to save all your project code online. We strongly recommend watching additional [tutorials](https://www.youtube.com/watch?v=9GKpbI1siow&list=PLpcSpRrAaOarEpNz71TSfNVd0eQmsZSgN) to learn more about Git and GitHub.
 
 ## Gitignore
 
@@ -80,6 +80,7 @@ Try it out!
 ## Optional
 
 - [Intro tutorial](https://www.youtube.com/watch?v=9GKpbI1siow&list=PLpcSpRrAaOarEpNz71TSfNVd0eQmsZSgN)
+- [GitHub Glossary](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/github-glossary)
 - [Advanced tutorial](https://pro.academind.com/p/git-github-the-practical-guide)
 - npm husky
 - npm prettier

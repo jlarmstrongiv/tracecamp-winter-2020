@@ -26,7 +26,7 @@ Links to the content we will be covering each day, aswell as the project assignm
 
 ## 🔗 Links
 
-Links relavant to the camp and the technologies we are using.
+Links relevant to the camp and the technologies we are using.
 
 - [Trace Camp Website](https://tracecamp.com/)
 - [Winter 2020 Camp Details](https://www.notion.so/Details-of-Trace-Camp-Winter-2020-1fb942fefba842308d36a70046ee33fb)
@@ -36,4 +36,4 @@ Links relavant to the camp and the technologies we are using.
 
 ## 🧯 Issues / Contribute
 
-If you find a problem within the repository please submit an issue. Or if you can fix it, submit a pull request.
+If you find a problem within the repository feel free to create an issue or message us on discord.

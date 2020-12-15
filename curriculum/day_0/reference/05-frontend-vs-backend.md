@@ -1,8 +1,22 @@
 # Frontend vs Backend
 
-## The internet
+## Frontend
 
-In the last article, we described how the internet is a network of computers talking to one another.
+The frontend deals with loading the webpage in the browser. The frontend is also referred to as client side. Webpages primarily made with:
+
+- **HTML** - the skeleton and data
+- **CSS** - the design and styling
+- **JavaScript** - interactivity and programming logic
+
+We will learn more about HTML, CSS, and JavaScript in upcoming lessons. Frontend concerns include loading content that the webpage needs, such as images, fonts, and requests for additional data. We can build webpages without a backend.
+
+## Backend
+
+The backend is everything that happens on the server. The backend is also referred to as the server side. Some backends can be very complex, involving multiple databases, servers, data processes, and backups. Some backends can be very simple and return static (unchanging) files, like images.
+
+Backend concerns include everything outside of the browser. When a webpage makes additional requests to the server, the server should process the request and return the data in a response.
+
+## Loading a webpage
 
 For example, let’s look at [sidebar.io](https://sidebar.io/), a popular blog for designers. Let’s think about what happens when you load the website in your browser:
 
@@ -20,22 +34,6 @@ For example, let’s look at [sidebar.io](https://sidebar.io/), a popular blog f
 - The webpage makes additional requests for images, fonts, and other data it needs
 
 Not all websites follow the same steps. They vary depending on the website needs and optimizations.
-
-## Frontend
-
-The frontend deals with loading the webpage in the browser. The frontend is also referred to as client side. Webpages primarily made with:
-
-- **HTML** - the skeleton and data
-- **CSS** - the design and styling
-- **JavaScript** - interactivity and programming logic
-
-We will learn more about HTML, CSS, and JavaScript in upcoming articles. Frontend concerns include loading content that the webpage needs, such as images, fonts, and requests for additional data. We can build webpages without a backend.
-
-## Backend
-
-The backend is everything that happens on the server. The backend is also referred to as the server side. Some backends can be very complex, involving multiple databases, servers, data processes, and backups. Some backends can be very simple and return static (unchanging) files, like images.
-
-Backend concerns include everything outside of the browser. When a webpage makes additional requests to the server, the server should process the request and return the data in a response.
 
 ## Curriculum
 

@@ -8,7 +8,7 @@ _This big scary diagram is not how the internet works. It’s random Amazon Web 
 
 According to wikipedia, “The Internet is the global system of interconnected computer networks”. Oversimplified, the internet is made of computers that talk to one another.
 
-In your home, your computer is connected to your WiFi router. That is your local network. Your WiFi router connects to your ISP (Internet Service Provide, such as Comcast, Spectrum, AT&T). These internet service providers connect you to their networks, which connect to even larger networks. Summed up, the Internet is made of these decentralized networks of networks.
+In your home, your computer is connected to your WiFi router. That is your local network. Your WiFi router connects to your ISP (Internet Service Provider, such as Comcast, Spectrum, AT&T). These internet service providers connect you to their networks, which connect to even larger networks. Summed up, the Internet is made of these decentralized networks of networks.
 
 ## IP addresses
 

@@ -11,6 +11,7 @@ When you write html:
   <head></head>
   <body>
     <h1>Taco Ipsum</h1>
+    <!-- Taco Ipsum is fun placeholder text with random words -->
     <p>
       Every day is <strong>taco ipsum tuesday</strong>. Tacos, again? This will
       be 5 times this week and it’s only Tuesday. Fish tacos with cabbage slaw
@@ -261,6 +262,8 @@ Consider this element:
   margin: 20px;
 }
 ```
+
+![box-model-box-sizing.png](../images/box-model-box-sizing.png)
 
 The element dimensions will be 130px with 20px margin all around.
 

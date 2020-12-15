@@ -2,7 +2,7 @@
 
 ## About
 
-While design is not the focus of this programming bootcamp, having a design eye will you implement beautiful user interfaces. This article is more of a list of resources for you to use in your projects, than a guide on how to use them.
+While design is not the focus of this programming bootcamp, having a design eye will you implement beautiful user interfaces. This lesson is more of a list of resources for you to use in your projects, than a guide on how to use them.
 
 If you are interested in learning more about design, read and watch:
 

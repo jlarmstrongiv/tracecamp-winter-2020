@@ -63,7 +63,7 @@ Often, tags that go in the body are displayed in the webpage. Let’s add a head
 
 The DOM from the parsed html code is a tree structure. A tree is data structure made of nodes and connected by edges. In a tree, the node at the start is called the root.
 
-![img](/Users/jlarmst/Desktop/tracecamp-winter-2020/images/x9vlbv8frut01.jpg)
+![img](../images/x9vlbv8frut01.jpg)
 
 In HTML, the nodes are html elements and the edges are their relationship to one another. Let’s take a look at this example:
 
