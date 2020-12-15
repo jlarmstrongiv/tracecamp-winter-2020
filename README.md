@@ -34,6 +34,6 @@ Links relevant to the camp and the technologies we are using.
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs/getting-started)
 
-## 🧯 Issues / Contribute
+## 🧯 Help and issues
 
 If you find a problem within the repository feel free to create an issue or message us on discord.
