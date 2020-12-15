@@ -133,7 +133,7 @@ const books = [
     ratings: [5, 4, 3],
   },
 ];
-console.log("Nested rating", books[0].ratings[0]);
+console.log("Nested rating", books[0].ratings[0]); // 5
 ```
 
 #### JSON

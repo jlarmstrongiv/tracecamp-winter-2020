@@ -31,8 +31,8 @@ Welcome to Trace Camp! This intro will help everyone start with a solid base. Yo
 
 The [quick start](./QUICKSTART.md) guide has everything you need to get started. If you would like to complete the prework as quickly as possible, this guide is for you.
 
-If you would like more information or would like to refer back to specific topics, we encourage you to read the [reference guide](./reference/01-cli.md).
+If you would like more information or a reference back to specific topics, we encourage you to read the [reference guide](./reference/01-cli.md).
 
-We **_do not_** expect you to know or even understand everything in the reference. Remember, your goal is to complete the prework assignment. Reach out to your instructors on Discord if you need help. Our job is to help you, and we want to see you succeed.
+We **_do not_** expect you to know or even understand everything in the reference. Remember, your goal is to complete the prework assignment. Reach out to your instructors on Discord if you need help. Our job is to help you, and we want to see you succeed!
 
 If you’re in a rush, watch the quickstart guide. With that said, the more time you spend learning and practicing the material, the better your final project will be. We will do our best to help you learn, but you will get out the effort you put in.
