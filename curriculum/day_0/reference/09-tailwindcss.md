@@ -81,7 +81,7 @@ Creating custom design and components is time-consuming. Feel free to take inspi
 - [https://tailwindtemplates.io/cards/](https://tailwindtemplates.io/cards/)
 - [https://www.gustui.com/docs/application/components/cards](https://www.gustui.com/docs/application/components/cards)
 
-## Homework
+## Practice
 
 - Recreate this one of the app screens from this [dribbble shot](https://dribbble.com/shots/14684852-Podcast-App-Exploration/attachments/6382328?mode=media) with Tailwind CSS.
   - [Google Fonts](https://fonts.google.com/specimen/Poppins)
@@ -93,3 +93,5 @@ Creating custom design and components is time-consuming. Feel free to take inspi
 
 - https://tailwindcss.com/docs/intellisense
 - https://github.com/ben-rogerson/twin.macro
+
+## [Next lesson →](./10-javascript.md)

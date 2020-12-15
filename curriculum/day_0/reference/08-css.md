@@ -447,7 +447,7 @@ _Credit [Wikipedia](https://bit.ly/386It2a)_
 
 Before CSS Grid and Flexbox, the holy grail was near impossible to create. Now, with modern web technologies, you too can implement this layout.
 
-## Homework
+## Practice
 
 - Holy grail in flexbox
 - Holy grail in css grid
@@ -468,3 +468,5 @@ Before CSS Grid and Flexbox, the holy grail was near impossible to create. Now, 
 - CSS in JS
 - CSS Caching
 - Relative and absolute link paths
+
+## [Next lesson →](./09-tailwindcss.md)

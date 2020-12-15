@@ -499,7 +499,7 @@ import fs from "fs-extra";
 })();
 ```
 
-## Homework
+## Practice
 
 In Nodejs, using [SWAPI](https://swapi.dev/api/planets/) (the Star Wars API):
 
@@ -515,3 +515,5 @@ In Nodejs, using [SWAPI](https://swapi.dev/api/planets/) (the Star Wars API):
   - [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [TabNine Autocomplete AI](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+
+## [Next lesson →](./11-surge.md)

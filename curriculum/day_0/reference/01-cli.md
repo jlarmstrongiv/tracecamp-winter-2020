@@ -11,6 +11,7 @@ If you are using Windows, use a terminal emulator like Cmder or Windows Subsyste
 ## Paths
 
 [![](../images/maxresdefault-paths.jpg)](https://www.youtube.com/watch?v=ephId3mYu9o)
+_Absolute paths on [YouTube](https://www.youtube.com/watch?v=ephId3mYu9o)_
 
 Start with your terminal app open. Type the command `pwd` and run it with `enter` to print the path to your current working directory. This command returns an absolute path to the folder you are currently in:
 
@@ -31,6 +32,7 @@ Practice navigating around your computer with the terminal using absolute and re
 ## Commands
 
 [![](../images/maxresdefault-linux-cli.jpg)](https://www.youtube.com/watch?v=id3DGvljhT4)
+_Commands on [YouTube](https://www.youtube.com/watch?v=id3DGvljhT4)_
 
 ```bash
 # this is a bash comment
@@ -64,17 +66,17 @@ rm -rf folder # careful, permanently deleted
 # ctrl+c kill process
 ```
 
-## Homework
+## Practice
 
 Using only commands in your terminal:
 
-- Create a folder in your downloads file called `tracecamp-cli-homework`
+- Create a folder in your downloads file called `tracecamp-cli-Practice`
 - Inside that folder, create:
   - `example.txt`
   - `helloworld.txt`
-- List all the files in the `tracecamp-cli-homework` directory
+- List all the files in the `tracecamp-cli-Practice` directory
 - Delete the `example.txt` file
-- Delete both the `tracecamp-cli-homework` and `helloworld.txt` at the same time
+- Delete both the `tracecamp-cli-Practice` and `helloworld.txt` at the same time
 
 ## Optional
 
@@ -90,3 +92,5 @@ Using only commands in your terminal:
 - Install helpful dotfiles, like
   - https://github.com/wesbos/dotfiles
   - https://github.com/mattjmorrison/dotfiles
+
+## [Next lesson →](./02-installation.md)

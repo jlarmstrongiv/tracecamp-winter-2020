@@ -2,7 +2,8 @@
 
 To publish your intro to web development websites so that others you share the url with can see it, we will use surge.sh. Watch the video or follow the commands below:
 
-[![maxresdefault-surge.jpg](../images/maxresdefault-surge.jpg)](https://surge.sh/help/getting-started-with-surge)
+[![maxresdefault-surge.jpg](../images/maxresdefault-surge.jpg)](https://www.youtube.com/watch?v=-EjdMvYPSVU)
+_Surge on [YouTube](https://www.youtube.com/watch?v=-EjdMvYPSVU)_
 
 Install surge with npm:
 
@@ -32,7 +33,7 @@ Publish your code publicly to GitHub. Add the link to your project under `About 
 
 ![github-link.png](../images/github-link.png)
 
-## Homework
+## Practice
 
 Publish all of your previous projects with surge, and add the surge links to your projects’ GitHub descriptions.
 
@@ -40,3 +41,5 @@ Publish all of your previous projects with surge, and add the surge links to you
 
 - [Vercel](https://vercel.com/)
 - [GitHub Pages](https://www.npmjs.com/package/gh-pages#command-line-utility)
+
+## [Next lesson →](./12-conclusion.md)

@@ -109,7 +109,7 @@ While accessibility is good for accessibility’s sake, there are additional mot
 
 Almost 20% of the world’s population have some type of disability.
 
-## Homework
+## Practice
 
 - Learn common html tags
   - title, meta, strong, em, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, inputs, forms, and more
@@ -131,3 +131,5 @@ Almost 20% of the world’s population have some type of disability.
 - ARIA Accessibility guidelines
 - Custom web components and the shadow DOM
 - HTML Email with MJML
+
+## [Next lesson →](./07-design.md)

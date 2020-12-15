@@ -35,7 +35,7 @@ On your machine, localhost is a loopback to your machine itself. Localhost, or `
 
 A protocol is a set of rules and standards that allow computers to talk with one another. `http` and `https` are common communication protocols used for accessing websites.
 
-## Homework
+## Practice
 
 - Find the IP address to your favorite site with `nslookup`
 - Copy and paste that IP address into your web browser (Google Chrome, Firefox, Safari)
@@ -54,3 +54,5 @@ A protocol is a set of rules and standards that allow computers to talk with one
 - Packets
 - Geocoding and geofencing
 - Privacy concerns, VPNs, TOR, and IP blocking
+
+## [Next lesson →](./05-frontend-vs-backend.md)

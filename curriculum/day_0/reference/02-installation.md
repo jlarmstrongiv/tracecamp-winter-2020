@@ -21,3 +21,5 @@ If you don’t already have one, [sign up](https://github.com/) for a GitHub acc
 ## Online
 
 You may also use [VS Code Online](https://visualstudio.microsoft.com/services//github-codespaces/) or [CodeSandbox](https://codesandbox.io/). Unfortunately, [StackBlitz](https://stackblitz.com/) does not support collaborative editing.
+
+## [Next lesson →](./03-git.md)

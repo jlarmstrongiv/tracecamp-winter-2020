@@ -67,7 +67,7 @@ git push
 
 While git commits may have any message, we recommend using [semantic commit messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716). By prefixing your messages with `feat: added feature name`, `fix: annoying bug name`, and more, it will make your changes clearer and encourage you to space your changes into multiple commits.
 
-## Homework
+## Practice
 
 Try it out!
 
@@ -85,3 +85,5 @@ Try it out!
 - npm prettier
 - npm eslint
 - CI/CD
+
+## [Next lesson →](./04-internet.md)
