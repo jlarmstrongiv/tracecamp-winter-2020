@@ -1,8 +1,8 @@
 # JavaScript
 
-TODO: MDN, difference between undefined and null, arity
-
 In this curriculum, you will not need to memorize all the JavaScript patterns below. Use this document as a reference, and refer back to it when you need it.
+
+For more information about these topics, check out [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [javascript.info](https://javascript.info/)
 
 ## Setup
 
@@ -401,7 +401,7 @@ friendlyGreeter = ({ name: firstName = "there" } = {}) =>
   console.log(`Hello ${firstName}`);
 ```
 
-TODO: function, destructuring, defaults, and renaming in that order.
+<!-- TODO: function, destructuring, defaults, and renaming in that order. -->
 
 ## Imports
 
@@ -461,7 +461,6 @@ console.log(Object.entries(person));
 ## Asynchronous functions
 
 ```js
-// TODO: error first
 const takesTimeCallback = setTimeout(() => console.log("callback done"), 500);
 
 const takesTimePromise = new Promise((resolve, reject) =>
@@ -517,8 +516,7 @@ start();
 // async example
 import fs from "fs-extra";
 
-// often called main or start, not outerAsyncFunction
-// alternative is iffe
+// iffe
 (async () => {
   let meaningOfLife;
   try {
