@@ -74,7 +74,7 @@ Open `http://localhost:3000/api/hello` to make a `GET` request from your browser
 
 #### Helpful apps
 
-Download your favorite http client app.
+Download your favorite http client app:
 
 - [Insomnia](https://insomnia.rest/)
 - [Postman](https://www.postman.com/)
@@ -198,5 +198,5 @@ export default (req, res) => {
 ## Homework
 
 - Make an API route
-- Communicate with a 3rd party API †hat uses a private key
+- Communicate with a 3rd party API that uses a private key
   - If you don’t know which API to use, explore [Rapid API](https://rapidapi.com/)
