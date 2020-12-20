@@ -582,6 +582,8 @@ An iffe is an immediately invoked function expression, which prevents polluting 
 
 There are thousands of third party libraries available on npm for JavaScript. Save time and use them in your projects.
 
+meaningOfLife.txt
+
 ```txt
 42
 ```
@@ -592,7 +594,7 @@ import fs from "fs-extra";
 (async () => {
   let meaningOfLife;
   try {
-    meaningOfLife = await fs.readFile("./src/meaningOfLife.txt", "utf-8");
+    meaningOfLife = await fs.readFile("./meaningOfLife.txt", "utf-8");
   } catch (error) {
     console.log(error);
   }
