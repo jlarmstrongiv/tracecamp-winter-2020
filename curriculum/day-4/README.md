@@ -36,11 +36,11 @@ RESTful API stands for REpresentational State Transfer. Don’t worry too much a
 
 A RESTful API is an architectural style, which helps developers standardize their code and describes what an API should look like. A RESTful API involves status codes and methods, along with other things.
 
-#### Status codes
+### Status codes
 
 An HTTP Status Code indicates whether a request has been completed. Learn all about the [various](https://http.cat/) codes. The most common one we will use is `200 OK`, meaning the request has completed successfully.
 
-#### Methods
+### Methods
 
 There are several HTTP methods. The most common ones are:
 
@@ -99,6 +99,84 @@ You will find a ton of information. To learn more about the highlights, read the
 
 - https://nextjs.org/docs/api-routes/introduction
 - https://vercel.com/docs/serverless-functions/introduction
+
+### Query parameters
+
+You can pass variables to your serverless function handler by using query strings. A query string is the question mark and everything after it in a url. For example, in `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the query string is `?v=dQw4w9WgXcQ`. Use query strings for non-sensitive information.
+
+`npm install axios query-string`
+
+Client:
+
+```js
+import axios from "axios";
+import queryString from "query-string";
+
+const url = queryString.stringifyUrl({
+  url: "http://localhost:3000/api/queryparams",
+  query: {
+    location: "Clemson",
+  },
+});
+
+axios.get(url).then((response) => console.log(response.data));
+```
+
+Server:
+
+```js
+// pages/api/queryparams.js
+
+export default (req, res) => {
+  response.json({ location: req.query.location, forecast: "Snow" });
+};
+```
+
+### Body
+
+A request body should only be sent with `POST`, `PATCH`, and `PUT`. A request body is the secure way to send data.
+
+`npm install axios`
+
+Client:
+
+```js
+import axios from "axios";
+
+axios
+  .post("http://localhost:3000/api/body", {
+    username: "johndoe",
+    password: "123456",
+  })
+  .then((response) => console.log(response.data));
+```
+
+Server:
+
+```js
+// pages/api/body.js
+
+// pseudo code
+function getUser(username, password) {
+  return {
+    username,
+  };
+}
+
+export default (req, res) => {
+  if (req.method !== "POST") {
+    response.statusCode = 405;
+    response.json({ error: "Method Not Allowed" });
+    return;
+  }
+
+  // verify user code here
+  const user = getUser(req.body.username, req.body.password);
+
+  response.statusCode = 200;
+  response.json(user);
+};
+```
 
 ## Example
 
