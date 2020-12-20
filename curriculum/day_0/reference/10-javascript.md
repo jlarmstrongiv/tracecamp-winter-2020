@@ -6,6 +6,11 @@ For more information about these topics, check out [MDN](https://developer.mozil
 
 ## Setup
 
+Be sure you have NodeJS installed.
+
+- Run `npm init -y` to initialize your project. Create an `index.js` file and run it with `node index.js`.
+- Run online with a [codesandbox](https://codesandbox.io/s) NodeJS template.
+
 ## Console
 
 Using the console.log method, you can print content to the terminal. Don’t worry about understanding a method or the syntax yet.
