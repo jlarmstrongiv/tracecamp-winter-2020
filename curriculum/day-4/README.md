@@ -200,3 +200,4 @@ export default (req, res) => {
 - Make an API route
 - Communicate with a 3rd party API that uses a private key
   - If you don’t know which API to use, explore [Rapid API](https://rapidapi.com/)
+- Build an interface with React
