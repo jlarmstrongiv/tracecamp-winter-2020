@@ -112,10 +112,12 @@ Client:
 import axios from "axios";
 import queryString from "query-string";
 
+// http://localhost:3000/api/queryparams?location=Clemson&day=Christmas
 const url = queryString.stringifyUrl({
   url: "http://localhost:3000/api/queryparams",
   query: {
     location: "Clemson",
+    day: "Christmas",
   },
 });
 
@@ -128,7 +130,11 @@ Server:
 // pages/api/queryparams.js
 
 export default (req, res) => {
-  response.json({ location: req.query.location, forecast: "Snow" });
+  response.json({
+    location: req.query.location,
+    day: req.query.day,
+    forecast: "Snow",
+  });
 };
 ```
 
