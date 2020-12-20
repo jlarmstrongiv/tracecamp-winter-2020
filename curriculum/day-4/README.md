@@ -60,7 +60,7 @@ export default (req, res) => {
 };
 ```
 
-An http status code may have different meanings depending on the method. The most common one we will use is the `GET` request.
+We will make `GET` requests most of the time. An http status code may have different meanings depending on the method.
 
 ## Nextjs API routes
 
