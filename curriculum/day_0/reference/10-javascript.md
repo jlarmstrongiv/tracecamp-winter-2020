@@ -6,9 +6,15 @@ For more information about these topics, check out [MDN](https://developer.mozil
 
 ## Setup
 
-Be sure you have NodeJS installed.
+### Locally
 
-- Run `npm init -y` to initialize your project. Create an `index.js` file and run it with `node index.js`.
+- Be sure you have npm installed
+- Run `npm init -y` to initialize your project
+- Create an `index.js` file
+- Run the file with `node index.js`.
+
+### Online
+
 - Run online with a [codesandbox](https://codesandbox.io/s) NodeJS template.
 
 ## Console
