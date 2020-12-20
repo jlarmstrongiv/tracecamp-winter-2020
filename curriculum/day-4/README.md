@@ -70,7 +70,7 @@ Nextjs makes it easy to write serverless functions. Inside the `pages` folder, y
 
 You will find an example `hello.js` inside the default project made with `create-next-app`. Run your code with `npm run dev`.
 
-Open `http://localhost:3000/api/hello` in your browser. Your response should be `{"name":"John Doe"}`.
+Open `http://localhost:3000/api/hello` to make a `GET` request from your browser. Your response should be `{"name":"John Doe"}`.
 
 #### Helpful apps
 
