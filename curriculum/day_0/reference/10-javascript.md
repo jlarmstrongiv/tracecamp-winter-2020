@@ -8,7 +8,7 @@ For more information about these topics, check out [MDN](https://developer.mozil
 
 ### Locally
 
-- Be sure you have npm installed
+- Be sure you have NodeJS installed
 - Run `npm init -y` to initialize your project
 - Create an `index.js` file
 - Run the file with `node index.js`.
