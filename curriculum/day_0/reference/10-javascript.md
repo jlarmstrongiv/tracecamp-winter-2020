@@ -122,37 +122,39 @@ groceryList.shift();
 
 #### Complex Data Structures
 
-Objects and array can be nests to model complex data. We can chain together our access methods to access this nested data.
+Objects and array can be nested to model complex data. We can chain together our access methods to access this nested data.
 
 ```js
 const books = [
   {
     title: "Crime and Punishment",
-    ratings: [5, 4, 5],
+    ratings: [2, 4, 5],
   },
   {
     title: "Programming is Hard",
     ratings: [5, 4, 3],
   },
 ];
-console.log("Nested rating", books[0].ratings[0]); // 5
+console.log("Nested rating", books[0].ratings[0]); // 2
 ```
 
 #### JSON
 
-JSON stands for JavaScript Object Notation. It is a very common format for reading and writing data. JSON is similar to the objects and arrays we have already learned, but all keys have to be in "double quotes".
+JSON stands for JavaScript Object Notation. It is a very common format for reading and writing data. JSON is similar to the objects and arrays we have already learned, but all keys and strings have to be in "double quotes".
 
-```js
-const booksJson = [
-  {
-    title: "Crime and Punishment",
-    ratings: [5, 4, 5],
-  },
-  {
-    title: "Programming is Hard",
-    ratings: [5, 4, 3],
-  },
-];
+```json
+{
+  "booksJson": [
+    {
+      "title": "Crime and Punishment",
+      "ratings": [5, 4, 5]
+    },
+    {
+      "title": "Programming is Hard",
+      "ratings": [5, 4, 3]
+    }
+  ]
+}
 ```
 
 ## Math
@@ -264,11 +266,14 @@ if (isWorkDone || isWeekend) {
 
 ### Ternary operator
 
-The ternary operator is like an `if…else` statement, but it fits in a single line.
+The ternary operator is like an `if…else` statement, but it fits in a single expression.
 
 ```js
 // condition ? exprIfTrue : exprIfFalse
-const isLuckyDay = myLuckyNumber === 7 ? true : false;
+const myLuckyDay =
+  myLuckyNumber === 7
+    ? "Something good will happen today!"
+    : "Better luck tomorrow!";
 ```
 
 ### Immutability
@@ -302,9 +307,13 @@ const fallGrades = { ...friendGrades };
 
 console.log(myClassSchedule === tuesdayClassSchedule); // false
 console.log(myGrades === fallGrades); // false
+
+// you can change tuesdayClassSchedule and fallGrades without affecting the origins
 ```
 
 ## Functions
+
+Using functions, it is possible organize and reuse code. There are many ways to write them.
 
 ```js
 // function keyword
@@ -325,6 +334,8 @@ greeterThree();
 ```
 
 ### Methods
+
+Methods are functions—the only difference is that methods are located on an object or class.
 
 ```js
 const greeterObject = {
@@ -352,18 +363,18 @@ greeterObject.greeterSeven();
 
 ### Parameters and arguments
 
-```js
-let friendlyGreeter = (name, greeting) => `${greeting} ${name}!`;
-friendlyGreeter("Bob", "Hi"); // Hi Bob
+When calling functions, you can pass variables. Arguments are the actual variables passed at runtime, while parameters are the variable names in the function definition.
 
-// Default values
-friendlyGreeter(); // undefined undefined
-friendlyGreeter = (name = "there", greeting = "Hello") =>
-  `${greeting} ${name}!`;
-friendlyGreeter(); // Hello there
+```js
+// name and greeting are parameters
+let friendlyGreeter = (name, greeting) => `${greeting} ${name}!`;
+// "Bob" and "Hi" are arguments
+friendlyGreeter("Bob", "Hi"); // Hi Bob!
 ```
 
 ## Destructuring
+
+Destructuring unpacks properties from an object or items from an array and assigns them to variables.
 
 ```js
 const person = {
@@ -373,74 +384,101 @@ const person = {
   country: "USA",
 };
 const { name, age, ...personalInfo } = person;
+console.log(name); // "Billy"
 
 const rgb = ["red", "green", "blue"];
 const [firstColor, ...otherColors] = rgb;
-
-// destructuring inside a function
-friendlyGreeter = ({ name }) => console.log(`Hello ${name}`);
-
-friendlyGreeter(person);
-person.name = undefined;
-friendlyGreeter(person);
-
-// with default variables
-friendlyGreeter = ({ name = "there" }) => console.log(`Hello ${name}`);
-
-friendlyGreeter(person);
-
-// safe without object
-friendlyGreeter = ({ name = "there" } = {}) => console.log(`Hello ${name}`);
-
-friendlyGreeter();
-
-// with renaming
-const { name: firstName } = person;
-
-friendlyGreeter = ({ name: firstName = "there" } = {}) =>
-  console.log(`Hello ${firstName}`);
+console.log(firstColor); // "red"
 ```
 
-<!-- TODO: function, destructuring, defaults, and renaming in that order. -->
+### Defaults
+
+When destructuring properties that are optional or may not exist, default values can be set in case they are undefined.
+
+```js
+const person = {};
+const { name = "Bob" } = person;
+console.log(name); // Bob
+```
+
+### Renaming
+
+Sometimes, a property can be renamed to provide clarity or prevent naming collisions with other preexisting variables.
+
+```js
+const person = { name: "Bob" };
+const { name: firstName } = person;
+console.log(firstName); // Bob
+```
+
+### Renaming with defaults
+
+It is possible to destructure with both default values and renamed values at the same time.
+
+```js
+const person = {};
+const { name: firstName = "Bob" } = person;
+console.log(firstName); // Bob
+```
+
+### Destructuring inside a function
+
+```js
+function safeGreeter({ name: firstName = "there" } = {}) {
+  return `Hello ${firstName}`;
+}
+safeGreeter();
+```
+
+The `= {}` gives an empty object as the default parameter for the function. Otherwise, an error will be thrown when you try to destructure properties from `undefined`.
 
 ## Imports
 
+To help organize code, many files are used to hold functions, objects, and more. To access them, use ES6 Modules and the import/export syntax.
+
 ```js
+// named exports
 export const cyan = "cyan";
 export const magenta = "magenta";
 export const yellow = "yellow";
 export const key = "black";
 
+// default export
 const cmyk = ["cyan", "magenta", "yellow", "key"];
 export default cmyk;
 ```
 
 ```js
+// named import
 import { cyan, magenta } from "./cmyk";
 console.log(cyan, magenta);
 
+// default import with named import
 import cmyk, { yellow } from "./cmyk";
 console.log(cmyk);
 
+// wildcard imports, imports everything
 import * as colors from "./cmyk";
 console.log(colors.magenta);
 ```
 
 ## Loops
 
+Often, loops are used to process each item in an array.
+
 ```js
-for (let i = 0; i < groceryList.length; i++) {
-  console.log(groceryList[i].toUpperCase());
+let wishList = [];
+
+for (let i = 0; i < wishList.length; i++) {
+  wishList[i] = wishList[i].toUpperCase();
 }
 
-groceryList.forEach((item, index) => console.log(item.toUpperCase(), index));
+wishList.forEach((item, index) => {
+  wishList[index] = item.toLowerCase()
+};
 
-console.log(groceryList);
-
-// changing items
-// * note .forEach does not return an array like map
-groceryList = groceryList.map((item) => item.toUpperCase());
-console.log(groceryList);
+// map returns a new array, while forEach does not
+wishList = wishList.map((item) => item.toUpperCase());
 
 // map takes a function
 const addTwo = (num) => num + 2;
@@ -453,47 +491,82 @@ const average = ratings.reduce((acc, val) => acc + val, 0) / ratings.length;
 console.log(average);
 
 // Objects
-console.log(Object.keys(person));
-console.log(Object.values(person));
-console.log(Object.entries(person));
+const movie = {
+  title: "It’s a Wonderful Life",
+  rating: "PG",
+  year: "1946",
+};
+
+// "title", "rating", "year"
+console.log(Object.keys(movie));
+// "It’s a Wonderful Life", "PG", "1946"
+console.log(Object.values(movie));
+// [["title", "It’s a Wonderful Life"], ["rating", "PG"], ["year", "1946"]]
+console.log(Object.entries(movie));
 ```
 
 ## Asynchronous functions
 
-```js
-const takesTimeCallback = setTimeout(() => console.log("callback done"), 500);
+Sometimes, operations may not complete immediately—for example, reading files, making requests, or simply waiting a certain period of time.
 
+```js
+const callback = () => console.log("callback done");
+// callback will be called after 500 milliseconds
+const takesTimeCallback = setTimeout(callback, 500);
+
+// however, chaining callbacks are messy
+fs.readFile("file-v1.txt", function (err, file1) {
+  fs.readFile("file-2.txt", function (err, file2) {
+    fs.readFile("file-3.txt", function (err, file3) {
+      // all files loaded
+    });
+  });
+});
+
+// promises allow for easier chaining and better error handling
 const takesTimePromise = new Promise((resolve, reject) =>
   setTimeout(() => resolve("promise done"), 500)
 );
+// promise will be resolved after 500 milliseconds
 takesTimePromise
   .then((data) => console.log("then", data))
   .catch((error) => console.log(error));
 
+// To write clean code, use the async / await syntax with promises
 const start = async () => {
   const takesTimeAsync = await new Promise((resolve, reject) =>
     setTimeout(() => resolve("done"), 500)
   );
-  console.log("await", takesTimeAsync);
+  console.log("waited for…", takesTimeAsync);
 };
 start();
 ```
 
-## Asynchronous loops
+### iffe
+
+An iffe is an immediately invoked function expression, which prevents polluting the global object and allows the use of async and await.
+
+```js
+(async () => {
+  // safe to write asynchronous code here
+})();
+```
+
+### Asynchronous loops
 
 ```js
 (async () => {
   const addThree = (num) =>
     new Promise((resolve, reject) => setTimeout(() => resolve(num + 3), 500));
 
-  // undefined
   let grades = [97, 90, 85];
-  grades = grades.map(addThree);
-  console.log("grades", grades);
+  // [[object Promise] { ... }, [object Promise] { ... }, [object Promise] { ... }]
+  // You want the promised result, not the promises themselves
+  console.log("grades", grades.map(addThree));
 
   // parallel
-  grades = await Promise.all(grades);
-  console.log("grades", grades);
+  let roundedGrades = await Promise.all(grades.map(addThree));
+  console.log("roundedGrades", roundedGrades); // 100, 93, 88
 
   // synchronous
   let curvedGrades = [];
@@ -501,22 +574,21 @@ start();
     const curvedGrade = await addThree(grade);
     curvedGrades.push(curvedGrade);
   }
-  console.log("curved grades", curvedGrades);
+  console.log("curved grades", curvedGrades); // 100, 93, 88
 })();
 ```
 
 ## Libraries
+
+There are thousands of third party libraries available on npm for JavaScript. Save time and use them in your projects.
 
 ```txt
 42
 ```
 
 ```js
-// import 3rd party library
-// async example
 import fs from "fs-extra";
 
-// iffe
 (async () => {
   let meaningOfLife;
   try {
@@ -526,6 +598,14 @@ import fs from "fs-extra";
   }
   console.log(meaningOfLife.trim());
 })();
+```
+
+```js
+import axios from "axios";
+
+axios
+  .get("https://swapi.dev/api/starships/9/")
+  .then((response) => console.log(response.data));
 ```
 
 ## Practice
