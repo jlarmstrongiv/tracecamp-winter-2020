@@ -2,9 +2,13 @@
 
 Read the [prework](./README.md) assignment.
 
-Example [site](https://jake-armstrong.surge.sh). Source code in the example folder.
+Example [site](https://jake-armstrong.surge.sh) and [source code](https://github.com/jlarmstrongiv/the-armstrongs).
 
-[![github-link.png](../images/github-link.png)](https://www.youtube.com/watch?v=oHg5SJYRHA0)
+**Video series coming soon** (6 videos · 1 hour)
+
+<!-- [![github-link.png](../images/github-link.png)](https://www.youtube.com/watch?v=oHg5SJYRHA0) -->
+
+## Helpful resources
 
 - https://www.internetingishard.com/
 - https://developer.mozilla.org/en-US/docs/Web
