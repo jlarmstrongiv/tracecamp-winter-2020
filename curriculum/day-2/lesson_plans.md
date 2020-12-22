@@ -1,6 +1,6 @@
 # Lesson Plans
 
-## Required Knowledge
+## Prerequisite Knowledge
 
 - idea of functions as first class citizens 
 - components and props
@@ -10,18 +10,73 @@
 - using className on elements (dont use class)
 
 ## Plan
-1. create and setup the project from the beginning (https://github.com/jlarmstrongiv/tracecamp-winter-2020/blob/main/reference/setting_up_a_project.md)
-    1. make folder `live-code`
-    2. initilize using `npx create-next-app`
-    3. add tailwind with `npm install tailwindcss postcss`
-        1. `postcss.config.js` and populate
-        2. `tailwind.css` and populate
-            1. remove other css files in `styles` folder
-        3. add tailwind line to `_app.js`
-    4. move source content to a `src` folder
-        1. eveything except `.next` and `node_modules`
-2. add a div that centers all content on the page, so that everyone can see any changes I make to content on the page
-3. 
+
+### 1. create and setup the project from the beginning 
+
+https://github.com/jlarmstrongiv/tracecamp-winter-2020/blob/main/reference/setting_up_a_project.md
+1. make folder `live-code`
+2. initilize using `npx create-next-app`
+3. add tailwind with `npm install tailwindcss postcss`
+    - `postcss.config.js` and populate
+    - `tailwind.css` and populate
+        - remove other css files in `styles` folder
+    - add tailwind line to `_app.js`
+4. move source content to a `src` folder
+    - eveything except `.next` and `node_modules`
+5. create a `components` folder
+
+### 2. add some convienience components
+1. make a component that centers everything on the page `components/Center.js`
+    - className: `flex items-center justify-center h-screen`
+2. make a component that stacks all of the items on the page `components/Stack.js`
+    - className: `flex flex-col text-center items-center`
+3. make the root element of the index page the `Center` component
+
+### 3. useState
+
+1.  start by showing `useState` with a button that can increment a **number** state
+2.  then modify it to flip a **boolean** value with the button
+    - `!flipped`?
+    - or `if (flipped) {setFlipped(false)} else {setFlipped(true)}`
+3.  remove the button and state, and go over **input** elements (for *forms*)
+    - value prop
+    - onChange prop (`event.target.value`)
+
+### Quiz project
+
+make sure there is a `center` component on the index
+
+
+#### Game Component
+
+1. root element is a `Stack`
+2. current question number display
+    1. `text-4xl mb-2`
+3. current question display
+    1. `text-7xl font-bold mb-10`
+4. component for repsonse input `AnswerInput`
+    1. start with elements
+        1. outer div
+        2. input
+        3. submission button
+
+## Reference Components
+
+### Button
+
+- `bg-blue-500`
+- `hover:bg-blue-700`
+- `text-white`
+- `font-bold`
+- `p-2`
+- `rounded`
+
+### Input
+
+- `border-2`
+- `border-gray-300`
+- `rounded-md`
+- `p-1`
 
 ## Topics (Key-points)
 
