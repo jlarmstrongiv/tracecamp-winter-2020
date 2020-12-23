@@ -4,7 +4,9 @@ Read the [prework](./README.md) assignment.
 
 Example [site](https://jake-armstrong.surge.sh) and [source code](https://github.com/jlarmstrongiv/the-armstrongs).
 
-**Video series coming soon** (6 videos · 1 hour)
+[![./images/html.jpg](./images/html.jpg)](https://www.youtube.com/playlist?list=PLHiGtNshvZ3BRExT8d34We2Ep_nnI7aWf)
+
+- Video series coming [tonight/tomorrow](https://www.youtube.com/playlist?list=PLHiGtNshvZ3BRExT8d34We2Ep_nnI7aWf) (3/5 videos · 1 hour)
 
 - For now, feel free to watch https://www.youtube.com/playlist?list=PLxhuIQQ59yy9iqA5AIoBBv6i_vvhRUaGm
 
