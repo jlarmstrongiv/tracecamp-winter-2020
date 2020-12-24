@@ -18,7 +18,8 @@ Links to the content we will be covering each day, aswell as the project assignm
 - [Day 2. Tuesday](./curriculum/day-2) - useState, useEffect, forms
 - [Day 3. Wednesday](./curriculum/day-3) - Async, APIs, Routing
 - [Day 4. Thursday](./curriculum/day-4) - Serverless, Private-key based APIs
-- [Day 5. Friday](./curriculum/day-5) - Deployment, Final Project
+- [Day 5. Friday](./curriculum/day-5) - Deployment, Optional Typescript
+- [Final Project](./curriculum/final-project)
 
 ## 📚 Reference
 

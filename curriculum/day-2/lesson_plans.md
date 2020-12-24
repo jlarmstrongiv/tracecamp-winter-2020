@@ -1,15 +1,21 @@
 # Lesson Plans
 
-## Prerequisite Knowledge
+## Recommended Prerequisite Knowledge
 
-- idea of functions as first class citizens 
-- components and props
-- importing other components
+*Ill just cover these ideas as they come up if there is a problem.*
+
+Strikethrough = insured coverage before lesson
+
+- ~~components and props~~
+- ~~importing other components~~
     - maybe from within folders (index.js with the name of the folder being what gets imported)
-- values rendered within components
-- using className on elements (dont use class)
+- ~~values rendered within components~~
+- ~~using className on elements (dont use class)~~
+- idea of functions as first class citizens (maybe infered)
 
 ## Plan
+
+**Keep the `live-code-predone` open to the side for reference; not sure if this will be good or not, but dont want to mess anything up**
 
 ### 1. create and setup the project from the beginning 
 
@@ -32,55 +38,9 @@ https://github.com/jlarmstrongiv/tracecamp-winter-2020/blob/main/reference/setti
     - className: `flex flex-col text-center items-center`
 3. make the root element of the index page the `Center` component
 
-### 3. useState
+### pre 3. hooks
 
-1.  start by showing `useState` with a button that can increment a **number** state
-2.  then modify it to flip a **boolean** value with the button
-    - `!flipped`?
-    - or `if (flipped) {setFlipped(false)} else {setFlipped(true)}`
-3.  remove the button and state, and go over **input** elements (for *forms*)
-    - value prop
-    - onChange prop (`event.target.value`)
-
-### Quiz project
-
-make sure there is a `center` component on the index
-
-
-#### Game Component
-
-1. root element is a `Stack`
-2. current question number display
-    1. `text-4xl mb-2`
-3. current question display
-    1. `text-7xl font-bold mb-10`
-4. component for repsonse input `AnswerInput`
-    1. start with elements
-        1. outer div
-        2. input
-        3. submission button
-
-## Reference Components
-
-### Button
-
-- `bg-blue-500`
-- `hover:bg-blue-700`
-- `text-white`
-- `font-bold`
-- `p-2`
-- `rounded`
-
-### Input
-
-- `border-2`
-- `border-gray-300`
-- `rounded-md`
-- `p-1`
-
-## Topics (Key-points)
-
-### hooks
+**Required Topics**
 
 - allow us to make our site interactive
 - taping into what is called the lifecycle of the components we make
@@ -95,7 +55,9 @@ make sure there is a `center` component on the index
     - when you cannot use a hook
         - within a conditional
 
-### useState
+### 3. useState
+
+**Required Topics**
 
 - store values on the page that are persistant between page renders
 - useState function returns a list of two values
@@ -111,7 +73,20 @@ make sure there is a `center` component on the index
 - **objects** `const [obj, setObj] = useState({})`
     - *add*/*change* property: `setObj({...obj, key: value})`
 
-### useEffect
+**Lesson Order**
+
+1.  start by showing `useState` with a button that can increment a **number** state
+    - Button classes: `bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded`
+2.  then modify it to flip a **boolean** value with the button
+    - `!flipped`
+3.  remove the button and state, and go over **input** elements (for *forms*)
+    - value prop
+    - onChange prop (`event.target.value`)
+    - Input classes: `border-2 border-gray-300 rounded-md p-1`
+
+### 4. useEffect
+
+**Required Topics**
 
 - cause something to happen as a response to change in the component (this can be state or a definition)
 - second parameter is an optional list of what to respond to
@@ -122,6 +97,25 @@ make sure there is a `center` component on the index
     - for `[]`: occurs when the component unmounts
     - for `[value]`: occurs after the value has changed once the effect is run at least once
 
-### Forms
+*Maybe go over `setInterval` and `clearInterval`*
 
-- value component is the
+
+**Lesson Order**
+
+...
+
+### 5. The Game
+
+**Lesson Order**
+
+1. root element is a `Stack`
+2. current question number display
+    - classes: `text-4xl mb-2`
+3. current question display
+    - classes: `text-7xl font-bold mb-10`
+4. component for repsonse input `AnswerInput`
+    1. start with elements
+        1. outer div
+        2. input
+        3. submission button
+

@@ -1,23 +1,39 @@
 import { useState } from "react";
 
+// submission component for use in a game
 const AnswerInput = ({ onGuess }) => {
+  // state storing the current text in the input
   const [response, setResponse] = useState("");
 
+  // gets called when the response is to be submitted
   const guess = () => {
+    // dont guess the response when its empty
     if (response.trim() === "") return;
 
+    // make the guess
+    // calling out of the component
     onGuess(response);
 
+    // clear the text field
     setResponse("");
   };
 
+  // handle the changing text in the field
   const handle_response = (event) => {
+    // the onChange event has an attribute called target
+    // which holds which element is being changed
+    // it is this element that we want to save the new value from
     const value = event.target.value;
     setResponse(value);
   };
 
+  // handle when a key is pressed when within the text box
   const handle_keypress = (event) => {
-    if (event.key === "Enter") guess();
+    // if the key is the enter key
+    if (event.key === "Enter") {
+      // make the guess
+      guess();
+    }
   };
 
   return (
