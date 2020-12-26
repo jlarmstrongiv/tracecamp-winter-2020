@@ -2,15 +2,13 @@
 
 Read the [prework](./README.md) assignment.
 
-Example [site](https://jake-armstrong.surge.sh) and [source code](https://github.com/jlarmstrongiv/the-armstrongs).
+Example [site](https://jake-armstrong.surge.sh) and [source code](https://github.com/jlarmstrongiv/jake-armstrong).
 
 [![./images/html.jpg](./images/html.jpg)](https://www.youtube.com/playlist?list=PLHiGtNshvZ3BRExT8d34We2Ep_nnI7aWf)
+_Crash course on [YouTube](https://www.youtube.com/playlist?list=PLHiGtNshvZ3BRExT8d34We2Ep_nnI7aWf)_
 
-- Video series coming [tonight/tomorrow](https://www.youtube.com/playlist?list=PLHiGtNshvZ3BRExT8d34We2Ep_nnI7aWf) (3/5 videos · 1 hour)
-
-- For now, feel free to watch https://www.youtube.com/playlist?list=PLxhuIQQ59yy9iqA5AIoBBv6i_vvhRUaGm
-
-<!-- [![github-link.png](../images/github-link.png)](https://www.youtube.com/watch?v=oHg5SJYRHA0) -->
+[![./images/crash-course.jpg](./images/crash-course.jpg)](https://www.youtube.com/playlist?list=PLxhuIQQ59yy9iqA5AIoBBv6i_vvhRUaGm)
+_Additional practice on [YouTube](https://www.youtube.com/playlist?list=PLxhuIQQ59yy9iqA5AIoBBv6i_vvhRUaGm)_
 
 ## Helpful resources
 
