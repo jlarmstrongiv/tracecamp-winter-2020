@@ -152,6 +152,7 @@ A design system is a set of reusable components that can be combined and reused 
 - [https://www.magicpattern.design/tools/css-backgrounds](https://www.magicpattern.design/tools/css-backgrounds)
 - [https://patternpad.com/](https://patternpad.com/)
 - [http://patterncollect.com/](http://patterncollect.com/)
+- [https://doodad.dev/pattern-generator/](https://doodad.dev/pattern-generator/)
 
 ### Gradients
 
