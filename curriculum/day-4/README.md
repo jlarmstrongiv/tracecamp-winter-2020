@@ -195,9 +195,14 @@ export default (req, res) => {
 
 - https://sendgrid.com/docs/for-developers/sending-email/quickstart-nodejs/
 
-## Homework
+## 📔 Assignment
 
 - Make an API route
 - Communicate with a 3rd party API that uses a private key
   - If you don’t know which API to use, explore [Rapid API](https://rapidapi.com/)
 - Build an interface with React
+
+## 🎯 Learning Objectives
+
+- Learn how to make a serverless handler function that receives a request and sends a response
+- Learn how to integrate with 3rd party APIs

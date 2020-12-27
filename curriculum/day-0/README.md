@@ -6,7 +6,7 @@
 
 Welcome to Trace Camp! This intro will help everyone start with a solid base. You must complete the prework before Trace Camp starts.
 
-## Prework
+## 📔 Prework Assignment
 
 - Create your own icebreaker website
   - You will show off your site on the first day during your introduction
@@ -26,6 +26,12 @@ Welcome to Trace Camp! This intro will help everyone start with a solid base. Yo
     - Post link in Discord
   - Publish website on surge.sh
   - Tailwind CSS recommended
+
+## 🎯 Learning Objectives
+
+- Learn how to structure your webpage with HTML
+- Learn how to style your webpage with Tailwind CSS
+- Learn how to save your project on GitHub and publish it to surge.sh
 
 ## ❓❗ Help
 
