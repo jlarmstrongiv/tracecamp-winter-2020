@@ -14,15 +14,31 @@ To start the website for development, run the following command.
 npm run dev
 ```
 
+Then to stop the development server, press the following keys while focused in the terminal.
+
+<div style="margin-left: 2rem;">
+On Windows: 
+<kbd>Ctrl</kbd> + <kbd>C</kbd>
+
+On Mac: 
+<kbd>Command</kbd> + <kbd>C</kbd>
+</div>
+
 ## Adding Tailwind
 
-Within the directory, run the following command. This will add tailwind to you project for you to configure.
+Within the directory, run the following command. This will install the dependencies required to setup tailwind.
 
 ```shell
-npm install tailwindcss postcss
+npm install tailwindcss postcss autoprefixer
 ```
 
-Next you will want to create two new files: `postcss.config.js` at the root of the project, and `tailwind.css` within the `styles` folder.
+Then run the below command to generate the following two config files: `postcss.config.js` and `tailwind.config.js`. The first configures *postcss* to build tailwind, and the second allows you to change how *tailwind* behaves in your project.
+
+```shell
+npx tailwindcss init -p
+```
+
+Next you will want to create a new file called `tailwind.css` in the `styles` directory, which is located within the root of the project.
 
 ```txt
 📦
@@ -32,18 +48,11 @@ Next you will want to create two new files: `postcss.config.js` at the root of t
 ├── 📂 public
 ├── 📂 styles
 │   └── 📄 tailwind.css     👈
-└── 📄 postcss.config.js    👈
+├── 📄 tailwind.config.js
+└── 📄 postcss.config.js
 ```
 
-Within the `postcss.config.js` file, add the following code.
-
-```js
-module.exports = {
-  plugins: ['tailwindcss'],
-}
-```
-
-Then within the `tailwind.css` file, add the following code.
+Within this new file, `tailwind.css`, add the following code. This file will ultimately load tailwind into your project.
 
 ```css
 @tailwind base;
@@ -51,7 +60,7 @@ Then within the `tailwind.css` file, add the following code.
 @tailwind utilities;
 ```
 
-Finally, once you have created and populated both of those files, add the following line to the top of your `_app.js` located within the `pages` folder.
+Finally, once you have completed all of the previous steps, add the following line to the top of your `_app.js` located within the `pages` folder.
 
 ```js
 import '../styles/tailwind.css';
@@ -66,6 +75,5 @@ const Component = (props) => {
     return (
         <div className="flex bg-red-800 overflow-hidden">
             { props.name }
-            
             ...
 ```
