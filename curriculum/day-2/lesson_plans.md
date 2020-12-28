@@ -32,6 +32,7 @@ https://github.com/jlarmstrongiv/tracecamp-winter-2020/blob/main/reference/setti
 5. create a `components` folder
 
 ### 2. add some convienience components
+
 1. make a component that centers everything on the page `components/Center.js`
     - className: `flex items-center justify-center h-screen`
 2. make a component that stacks all of the items on the page `components/Stack.js`
