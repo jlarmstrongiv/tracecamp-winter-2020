@@ -491,15 +491,20 @@ wishList.forEach((item, index) => {
 // map returns a new array, while forEach does not
 wishList = wishList.map((item) => item.toUpperCase());
 
-// map takes a function
 const addTwo = (num) => num + 2;
 let ratings = [6, 7, 8];
-ratings = ratings.map(addTwo);
-console.log(ratings);
 
-// reduce
+// map takes a function, iterates over each item in the array, and returns a new array
+ratings = ratings.map(addTwo);
+console.log(ratings); // [8, 9, 10]
+
+// filter takes a function, iterates over each item in the array, and returns a new array with items that are truthy
+let ratings = ratings.filter(ratings => rating >= 9)
+console.log(ratings); // [9, 10]
+
+// reduce takes a function, and allows you to accumulate all your values together
 const average = ratings.reduce((acc, val) => acc + val, 0) / ratings.length;
-console.log(average);
+console.log(average); // 9.5
 
 // Objects
 const movie = {
