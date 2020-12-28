@@ -12,7 +12,7 @@
 
 ## 📔 Assignment
 
-Download the provided data folder from [here](./assignment-data/), which includes a `json` file containing a list of details for different animals, as well as the images for each animal.
+Download the provided data folder from [here](./assignment-data.zip), which includes a `json` file containing a list of details for different animals, as well as the images for each animal.
 
 Each animal has the following attributes:
 - `type` - animal type
