@@ -29,4 +29,7 @@ Then do the following, to the list of animals:
 
 ## 🔗 Resources
 
-**Links to lecture material will be here**
+- [Lecture Notes](./lecture-1.org) - super detailed overview of the lecture
+- [Next.js Setup](https://nextjs.org/learn/basics/create-nextjs-app/setup) - official documentation for setting up Next.js
+- [Tailwind Setup](../../reference/setting_up_a_project.md) - setting up tailwind with Next.js
+- [Potion Seller](https://www.youtube.com/watch?v=R_FQU4KzN7A) - inspiration for the potion demo 😂
