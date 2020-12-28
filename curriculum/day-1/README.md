@@ -18,7 +18,7 @@ Each animal has the following attributes:
 - `type` - animal type
 - `state` - emotional expression
 - `img` - path to the image
-- `adoption-fee` - the cost to adopt the animal
+- `adoption_fee` - the cost to adopt the animal
 
 Then do the following, to the list of animals:
 

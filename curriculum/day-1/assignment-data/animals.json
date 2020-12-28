@@ -1,0 +1,98 @@
+[
+    {
+        "type": "lizard",
+        "state": "chill",
+        "img": "animal1.jpg",
+        "adoption_fee": 15
+    },
+    {
+        "type": "monkey",
+        "state": "sad",
+        "img": "animal2.jpg",
+        "adoption_fee": 25
+    },
+    {
+        "type": "monkey",
+        "state": "thinking",
+        "img": "animal3.jpg",
+        "adoption_fee": 20
+    },
+    {
+        "type": "cat",
+        "state": "chill",
+        "img": "animal4.jpg",
+        "adoption_fee": 18
+    },
+    {
+        "type": "cat",
+        "state": "sad",
+        "img": "animal5.jpg",
+        "adoption_fee": 20
+    },
+    {
+        "type": "cat",
+        "state": "thinking",
+        "img": "animal6.jpg",
+        "adoption_fee": 30
+    },
+    {
+        "type": "cat",
+        "state": "sad",
+        "img": "animal7.jpg",
+        "adoption_fee": 35
+    },
+    {
+        "type": "monkey",
+        "state": "chill",
+        "img": "animal8.jpg",
+        "adoption_fee": 25
+    },
+    {
+        "type": "dog",
+        "state": "thinking",
+        "img": "animal9.jpg",
+        "adoption_fee": 30
+    },
+    {
+        "type": "dog",
+        "state": "sad",
+        "img": "animal10.jpg",
+        "adoption_fee": 15
+    },
+    {
+        "type": "dog",
+        "state": "chill",
+        "img": "animal11.jpg",
+        "adoption_fee": 10
+    },
+    {
+        "type": "lizard",
+        "state": "thinking",
+        "img": "animal12.jpg",
+        "adoption_fee": 25
+    },
+    {
+        "type": "monkey",
+        "state": "sad",
+        "img": "animal13.jpg",
+        "adoption_fee": 30
+    },
+    {
+        "type": "dog",
+        "state": "thinking",
+        "img": "animal14.jpg",
+        "adoption_fee": 20
+    },
+    {
+        "type": "lizard",
+        "state": "chill",
+        "img": "animal15.jpg",
+        "adoption_fee": 15
+    },
+    {
+        "type": "lizard",
+        "state": "sad",
+        "img": "animal16.jpg",
+        "adoption_fee": 10
+    }
+]
