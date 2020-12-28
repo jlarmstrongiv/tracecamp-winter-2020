@@ -21,7 +21,7 @@ On Windows:
 <kbd>Ctrl</kbd> + <kbd>C</kbd>
 
 On Mac: 
-<kbd>Command</kbd> + <kbd>C</kbd>
+<kbd>Control</kbd> + <kbd>C</kbd>
 </div>
 
 ## Adding Tailwind
