@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Weak Mana Potion",
+        "type": "weak",
+        "description": "Partially recovers mana.",
+        "price": 5,
+        "img": "pt3.png"
+    },
+    {
+        "name": "Medium Mana Potion",
+        "type": "medium",
+        "description": "Partially recovers mana. Stronger than the weak mana potion.",
+        "price": 10,
+        "img": "pt3.png"
+    },
+    {
+        "name": "Strong Mana Potion",
+        "type": "strong",
+        "description": "Totally recovers mana.",
+        "price": 350,
+        "img": "pt3.png"
+    },
+    {
+        "name": "Weak Health Potion",
+        "type": "weak",
+        "description": "Partially recovers health.",
+        "price": 45,
+        "img": "pt1.png"
+    },
+    {
+        "name": "Medium Health Potion",
+        "type": "medium",
+        "description": "Partially recovers health. Stronger than the weak mana potion.",
+        "price": 450,
+        "img": "pt1.png"
+    },
+    {
+        "name": "Strong Health Potion",
+        "type": "strong",
+        "description": "Totally recovers health.",
+        "price": 1000,
+        "img": "pt1.png"
+    },   
+    {
+        "name": "Weak Invisibility Potion",
+        "type": "weak",
+        "description": "You become slightly translucent. This is kinda useless tbh.",
+        "price": 25000,
+        "img": "pt4.png"
+    },
+    {
+        "name": "Medium Invisibility Potion",
+        "type": "medium",
+        "description": "You are slighly more translucent.",
+        "price": 50000,
+        "img": "pt4.png"
+    },  
+    {
+        "name": "Strong Invsibility Potion",
+        "type": "strong",
+        "description": "Where did you go?",
+        "price": 100000,
+        "img": "pt4.png"
+    }   
+]
