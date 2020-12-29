@@ -2,7 +2,15 @@
 
 In this curriculum, you will not need to memorize all the JavaScript patterns below. Use this document as a reference, and refer back to it when you need it.
 
-For more information about these topics, check out [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [javascript.info](https://javascript.info/)
+For more information about these topics, check out:
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [javascript.info](https://javascript.info/)
+
+Or, watch:
+
+- https://www.youtube.com/watch?v=hdI2bqOjy3c
+- https://www.youtube.com/watch?v=W6NZfCO5SIk
 
 ## Setup
 
