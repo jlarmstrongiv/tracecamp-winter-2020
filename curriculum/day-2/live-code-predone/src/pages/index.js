@@ -15,7 +15,7 @@ const index = () => {
   // gets called when the game is over
   // from the Game component
   const gameover = (score) => {
-    // set playingt to false
+    // set playing to false
     // which will switch the rendered component back to the MainMenu
     setPlaying(false);
 

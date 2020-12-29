@@ -48,7 +48,7 @@ const AnswerInput = ({ onGuess }) => {
       />
       <button
         onClick={guess}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded"
+        className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold p-2 rounded"
       >
         Submit
       </button>

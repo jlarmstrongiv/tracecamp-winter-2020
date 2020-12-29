@@ -11,7 +11,7 @@
 
 ## 📔 Assignment
 
-Make a quiz app like the project done in lecture (can be referenced in the `live-code` folder located in this days curriculum). It must have the following requirements:
+Make a quiz app like the project done in lecture (can be referenced in the [live-code](./live-code) folder located in this days curriculum). It must have the following requirements:
 
 - main menu with a title
 - game screen where you will play the game
