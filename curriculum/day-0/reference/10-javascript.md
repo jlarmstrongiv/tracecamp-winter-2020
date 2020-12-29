@@ -404,10 +404,12 @@ const person = {
 };
 const { name, age, ...personalInfo } = person;
 console.log(name); // "Billy"
+console.log(personalInfo); // {"favoriteColor":"green","country":"USA"}
 
 const rgb = ["red", "green", "blue"];
 const [firstColor, ...otherColors] = rgb;
 console.log(firstColor); // "red"
+console.log(otherColors); // ["green", "blue"]
 ```
 
 ### Defaults
