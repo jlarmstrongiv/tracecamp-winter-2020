@@ -28,4 +28,5 @@ you can choose whatever you want for the content of the game. Below are some ide
 
 ## 🔗 Resources
 
+- [Lecture Recording](https://drive.google.com/file/d/1mxunh-Z5j0vOkcjdD74MX95RGrt87ftI/view?usp=sharing) - a recording of the lecture in which we live-code a version of the assignment for today.
 - [React Documentation](https://reactjs.org/docs/hooks-intro.html) - best source for learning about everything React. Really well explained with examples.
