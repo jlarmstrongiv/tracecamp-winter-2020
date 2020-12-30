@@ -79,15 +79,6 @@ const favoriteToppings = apiResponse.toppings;
 // if you wanted to display the word cheese to the console...
 console.log(favoriteToppings[0])
 ```
-
-(let's dive in and see what it takes to call an api ([start nextjs project](https://github.com/jlarmstrongiv/tracecamp-winter-2020/blob/main/reference/setting_up_a_project.md) and do kanye.rest demo)
-
-lookup axios call react, copy paste, use kanye.rest link
-
-console.log inside the .then() - it worked! but it won't stop!!! explain useEffect;
-
-now explain promises and whatnot)
-
 A promise is what it sounds like, an IOU, or a placeholder. It's an object that says "hey, i'll be right back", and then when we get our API call, our promise says "i'm back!" More technically, a promise can exist in 3 states: Pending, Fulfilled, or Rejected.
 
 More on Async/Await: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
