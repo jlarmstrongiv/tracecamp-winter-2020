@@ -79,7 +79,7 @@ const favoriteToppings = apiResponse.toppings;
 // if you wanted to display the word cheese to the console...
 console.log(favoriteToppings[0])
 ```
-# 💞 Promises
+### 💞 Promises
 A promise is what it sounds like, an IOU, or a placeholder. It's an object that says "hey, i'll be right back", and then when we get our API call, our promise says "i'm back!" More technically, a promise can exist in 3 states: Pending, Fulfilled, or Rejected.
 
 More on Async/Await: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
