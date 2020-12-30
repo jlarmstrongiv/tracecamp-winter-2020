@@ -6,26 +6,22 @@ import React, { useEffect, useState } from 'react';
 export default function Home() {
   const [apiResponse, setApiResponse] = useState('');
   const [query, setQuery] = useState('');
-  const [search, setSearch] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [isFirstMount, setIsFirstMount] = useState(true);
+  const [search, setSearch] = useState(''); // changes when we hit the "submit" button. allows our useEffect to be called any time we press the submit button (because we pass search as a dependency to useEffect)
+  const [isLoading, setIsLoading] = useState(false); // when isLoading is true we display our spinner loading icon
 
-  useEffect(async () => {
-    setIsLoading(true);
-    const result = await axios(
-      'http://slowwly.robertomurray.co.uk/delay/2000/url/https://api.kanye.rest/',
-    );
+  useEffect(() => {
+    
+    setIsLoading(true); // set isLoading to TRUE before+during our API call
+    // declare an ASYNC function getQuote to perform our axios call, because await can only work in async functions
+    async function getQuote() {
+        // here i'm using http://slowwly.robertomurray.co.uk to simulate a slow api response (so we can use a spinner loading icon!)
+        const response = await axios('http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.kanye.rest/');
+    }
+    
+    // call getQuote and store its value (which is a promise) in result
+    const result = getQuote();
     setApiResponse(result.data.quote);
-    setIsLoading(false);
-
-    // axios
-    //   .get(
-    //     'http://slowwly.robertomurray.co.uk/delay/2000/url/https://api.kanye.rest/',
-    //   )
-    //   .then((res) => {
-    //     setApiResponse(res.data.quote);
-    //     console.log(apiResponse);
-    //   });
+    setIsLoading(false); // API call is done
   }, [search]);
 
   return (
@@ -41,7 +37,8 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a className={styles.card}>
-            {isLoading && !isFirstMount ? (
+            // if isLoading, display icon. else, display the apiresponse
+            {isLoading ? (
               <img
                 style={{ width: '50px', margin: '80px auto' }}
                 src="https://thumbs.gfycat.com/SkinnySeveralAsianlion.webp"
@@ -50,6 +47,7 @@ export default function Home() {
             ) : (
               <p className={styles.description}>{apiResponse}</p>
             )}
+
           </a>
         </div>
         <form
@@ -69,7 +67,6 @@ export default function Home() {
             value="Submit"
             onClick={() => {
               setSearch(query);
-              setIsFirstMount(false);
             }}
           />
         </form>
