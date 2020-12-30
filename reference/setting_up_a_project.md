@@ -26,10 +26,10 @@ On Mac:
 
 ## Adding Tailwind
 
-Within the directory, run the following command. This will install the dependencies required to setup tailwind.
+Within the new project directory, run the following command. This will install the dependencies required to setup tailwind.
 
 ```shell
-npm install tailwindcss postcss autoprefixer
+npm install tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
 Then run the below command to generate the following two config files: `postcss.config.js` and `tailwind.config.js`. The first configures *postcss* to build tailwind, and the second allows you to change how *tailwind* behaves in your project.
@@ -66,7 +66,7 @@ Finally, once you have completed all of the previous steps, add the following li
 import '../styles/tailwind.css';
 ```
 
-Now you can use tailwind anywhere across your site.
+Now you can use tailwind anywhere across your site!
 
 ```jsx
 import React from 'react'
@@ -77,3 +77,13 @@ const Component = (props) => {
             { props.name }
             ...
 ```
+
+## Adding Axios
+
+Within your projecct directory, run the following command.
+
+```shell
+npm install axios
+```
+
+After the above command finishes running, you should be able to import and use axios through out your project.
