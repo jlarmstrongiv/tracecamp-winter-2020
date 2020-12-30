@@ -1,0 +1,28 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 180px solid #1c003b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
