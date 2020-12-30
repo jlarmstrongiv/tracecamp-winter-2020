@@ -80,10 +80,10 @@ const Component = (props) => {
 
 ## Adding Axios
 
-Within your projecct directory, run the following command.
+Within your project directory, run the following command.
 
 ```shell
 npm install axios
 ```
 
-After the above command finishes running, you should be able to import and use axios through out your project.
+After the above command finishes running, you should be able to import and use axios throughout your project.
