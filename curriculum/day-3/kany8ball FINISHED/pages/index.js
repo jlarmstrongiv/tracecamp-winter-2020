@@ -11,27 +11,17 @@ export default function Home() {
 
   useEffect(() => {
     setIsLoading(true); // set isLoading to TRUE before+during our API call
-    /*
-    ! THIS ALSO WORKS
-    !-------------------
-    async function getQuote() {
-      const response = await axios(
-        "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.kanye.rest/"
-      );
-      return response;
-    }
-    !-------------------
-    */
 
+    // for pulling the quote
     const getQuote = () =>
       axios(
         "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.kanye.rest/"
-      );
+      ).then((response) => response.data.quote);
 
     // call getQuote and store its value (which is a promise) in result
-    getQuote().then((response) => {
-      setApiResponse(response.data.quote);
-      setIsLoading(false); // API call is done
+    getQuote().then((quote) => {
+      setApiResponse(quote);
+      setIsLoading(false); // when the API call is done
     });
   }, [search]);
 
