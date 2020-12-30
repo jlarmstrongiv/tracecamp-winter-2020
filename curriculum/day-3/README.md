@@ -92,9 +92,9 @@ Assignment: SWAPI assignment from [Jake's JS guide](https://github.com/jlarmstro
 
 using [SWAPI](https://swapi.dev/api/planets/) (the Star Wars API):
 
-- Fetch all the pages of the planets with [axios](https://www.npmjs.com/package/axios)
+- Use Map() to fetch all the pages of the planets with [axios](https://www.npmjs.com/package/axios)
 - Filter out any planets with an unknown population
-- Use Map() to display all planet names with their populations 
+- Display all planet names with their populations 
 
 
 
