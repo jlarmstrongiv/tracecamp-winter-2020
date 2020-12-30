@@ -69,13 +69,11 @@ import '../styles/tailwind.css';
 Now you can use tailwind anywhere across your site!
 
 ```jsx
-import React from 'react'
-
 const Component = (props) => {
     return (
         <div className="flex bg-red-800 overflow-hidden">
             { props.name }
-            ...
+            // etc.
 ```
 
 ## Adding Axios
@@ -87,3 +85,7 @@ npm install axios
 ```
 
 After the above command finishes running, you should be able to import and use axios throughout your project.
+
+```js
+import axios from 'axios';
+
