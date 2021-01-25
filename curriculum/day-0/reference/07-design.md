@@ -68,6 +68,8 @@ A design system is a set of reusable components that can be combined and reused 
 
 - [https://www.checklist.design/](https://www.checklist.design/)
 - [https://medium.com/@megdraws/designing-illustrations-for-small-screens-a352a5712fa0](https://medium.com/@megdraws/designing-illustrations-for-small-screens-a352a5712fa0)
+- [https://uxdesign.cc/a-comprehensive-list-of-ux-design-methods-deliverables-2021-2feb3e70e168](https://uxdesign.cc/a-comprehensive-list-of-ux-design-methods-deliverables-2021-2feb3e70e168)
+- [https://en.wikipedia.org/wiki/List_of_cognitive_biases](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 - [https://github.com/bradtraversy/design-resources-for-developers](https://github.com/bradtraversy/design-resources-for-developers)
 - [Website UI Design Tutorials](https://www.youtube.com/watch?v=Ycgouilee8E&list=PLMpqQuhhJfLxszNWAmoHVUHUNsXNV3YNN)
 
@@ -141,6 +143,7 @@ A design system is a set of reusable components that can be combined and reused 
 - [https://2.flexiple.com/scale/all-illustrations](https://2.flexiple.com/scale/all-illustrations)
 - [https://www.manypixels.co/gallery/](https://www.manypixels.co/gallery/)
 - [https://illlustrations.co/](https://illlustrations.co/)
+- [https://www.vektors.pro/](https://www.vektors.pro/)
 
 ### Patterns
 
@@ -177,6 +180,7 @@ A design system is a set of reusable components that can be combined and reused 
 - [http://goodsalesemails.com](http://goodsalesemails.com/)
 - [https://codedmails.com/](https://codedmails.com/)
 - [https://hunter.io/templates](https://hunter.io/templates)
+- [https://unlayer.com/templates](https://unlayer.com/templates)
 
 ### Image minifiers
 
@@ -224,6 +228,7 @@ A design system is a set of reusable components that can be combined and reused 
 - [https://themify.me/themify-icons](https://themify.me/themify-icons)
 - [https://webkul.github.io/beedii/](https://webkul.github.io/beedii/)
 - [https://www.iconbros.com/](https://www.iconbros.com/)
+- [https://www.visiwig.com/icons/](https://www.visiwig.com/icons/)
 - [https://www.zwicon.com/](https://www.zwicon.com/)
 
 #### Aggregated icons
