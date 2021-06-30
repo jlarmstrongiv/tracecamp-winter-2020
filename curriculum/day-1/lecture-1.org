@@ -57,7 +57,7 @@ Let's add an ordered list as well, go ahead and copy the above.
 <ol>
   <li>item 1</li>
   <li>item 2</li>
-  <li>item 3</licompoenent >
+  <li>item 3</li>
 </ol>
 #+end_src
 
